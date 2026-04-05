@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 def payload_create_booking():
     payload = {
-        "firstname": "Amit",
+        "firstname": "Suman",
         "lastname": "Brown",
         "totalprice": 111,
         "depositpaid": True,
@@ -38,10 +38,11 @@ def payload_update_booking():
 
 
 def payload_create_token():
-    load_dotenv()
+    load_dotenv(override=True)
     payload = {
-        "username": os.getenv("USERNAME"),
-        "password": os.getenv("PASSWORD")
+        'username': os.getenv('TOKEN_PAYLOAD_USERNAME'),
+        'password': os.getenv('TOKEN_PAYLOAD_PASSWORD'),
     }
     return payload
+
 

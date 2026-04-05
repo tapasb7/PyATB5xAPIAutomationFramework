@@ -18,7 +18,7 @@ class TestCreateBooking(object):
         LOGGER= logging.getLogger(__name__)
         LOGGER.info("Starting of Testcase")
         response = post_request(
-            url= ApiConstants().usrl_create_booking(),
+            url= ApiConstants().url_create_booking(),
             auth= None,
             headers= Utils().common_headers_json(),
             payload= payload_create_booking(),
@@ -40,7 +40,7 @@ class TestCreateBooking(object):
         LOGGER = logging.getLogger(__name__)
         LOGGER.info("Starting of Testcase")
         response = post_request(
-            url=ApiConstants().usrl_create_booking(),
+            url=ApiConstants().url_create_booking(),
             auth=None,
             headers=Utils().common_headers_json(),
             payload={},
@@ -57,7 +57,7 @@ class TestCreateBooking(object):
         LOGGER = logging.getLogger(__name__)
         LOGGER.info("Starting of Testcase")
         response = post_request(
-            url=ApiConstants().usrl_create_booking(),
+            url=ApiConstants().url_create_booking(),
             auth=None,
             headers=Utils().common_headers_json(),
             payload={'name' : 'Tapas'},
