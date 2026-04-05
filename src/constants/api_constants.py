@@ -1,6 +1,6 @@
 #APIConstants class contains all the endpoints
 
-class ApiConstants:
+class ApiConstants(object):
 
     def __init__(self):
         pass
@@ -13,3 +13,6 @@ class ApiConstants:
 
     def url_create_token(self):
         return 'https://restful-booker.herokuapp.com/auth'
+
+    def url_patch_put_delete(booking_id):
+        return 'https://restful-booker.herokuapp.com/booking'+str(booking_id)
