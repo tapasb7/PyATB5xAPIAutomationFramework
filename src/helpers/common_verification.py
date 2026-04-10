@@ -21,3 +21,6 @@ def verify_json_key_not_none(key):
 
 def verify_json_key_greater_than_zero(key):
     assert key >= 0, "Failed : Key is not greater than zero"
+
+def verify_response_deleted_booking(response):
+    assert "Created" in response, "Failed to Delete booking"

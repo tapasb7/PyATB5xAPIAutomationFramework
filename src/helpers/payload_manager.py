@@ -9,9 +9,9 @@ from dotenv import load_dotenv
 
 def payload_create_booking():
     payload = {
-        "firstname": "Suman",
-        "lastname": "Brown",
-        "totalprice": 111,
+        "firstname": "Rogan",
+        "lastname": "Josh",
+        "totalprice": 112,
         "depositpaid": True,
         "bookingdates": {
             "checkin": "2018-01-01",

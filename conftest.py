@@ -1,7 +1,7 @@
 #To reuse create token & create booking
 
 import pytest
-import allure
+
 
 from src.constants.api_constants import ApiConstants
 from src.helpers.api_requests_wrapper import *
