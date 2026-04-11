@@ -24,13 +24,13 @@ def payload_create_booking():
 
 def payload_update_booking():
     payload = {
-        "firstname": "Amit",
-        "lastname": "Brown",
-        "totalprice": 111,
+        "firstname": "Monty",
+        "lastname": "Singh",
+        "totalprice": 1121,
         "depositpaid": True,
         "bookingdates": {
-            "checkin": "2018-01-01",
-            "checkout": "2019-01-01"
+            "checkin": "2026-01-01",
+            "checkout": "2026-02-01"
         },
         "additionalneeds": "Breakfast"
     }

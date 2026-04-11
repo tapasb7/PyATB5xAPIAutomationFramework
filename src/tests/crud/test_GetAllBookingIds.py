@@ -23,7 +23,7 @@ class TestGetAllBookingIds:
         LOGGER.info('Now Verify the list of booking ids are available')
         verify_http_status_code(response_data=response, expected_data=200)
         response_data = response.json()
-        with open(r'/allbookings.json', 'w', encoding='utf-8') as outfile:
+        with open(r'./allbookings.json', 'w', encoding='utf-8') as outfile:
             json.dump(response_data, outfile)
 
 
