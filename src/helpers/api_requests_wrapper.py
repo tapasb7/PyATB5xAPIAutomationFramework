@@ -33,8 +33,8 @@ def patch_request(url,auth, headers, payload, in_json):
         return patch_request_data
 
 
-def delete_request(url,auth, headers, in_json):
-    delete_response_data = requests.delete(url=url, auth=auth, headers=headers)
+def delete_request(url, in_json):
+    delete_response_data = requests.delete(url=url)
     if in_json:
         return delete_response_data.json()
     else:

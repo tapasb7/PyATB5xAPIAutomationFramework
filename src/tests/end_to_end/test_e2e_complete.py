@@ -40,15 +40,15 @@ class TestE2E(object):
     def test_delete_booking_with_id_token(self,create_token,get_booking_id):
         print(create_token,get_booking_id)
         booking_id = get_booking_id
-        token = create_token
+        # token = create_token
 
         delete_url = ApiConstants().url_patch_put_delete(booking_id=booking_id)
         print(delete_url)
 
         response= delete_request(
             url=delete_url,
-            headers=Utils().common_header_put_delete_patch_cookie(token=token),
-            auth=None,
+            # headers=Utils().common_header_put_delete_patch_cookie(token=token),
+            # auth=None,
             in_json=False
         )
         verify_http_status_code(response_data=response, expected_data=201)

@@ -19,12 +19,13 @@ class TestDeleteBooking(object):
         LOGGER.info("Starting of Testcase")
         booking_id = get_booking_id
         print("booking_id", booking_id)
+        delete_url = ApiConstants().url_patch_put_delete(booking_id)
+        print(delete_url)
         response = delete_request(
             url=ApiConstants().url_patch_put_delete(booking_id=booking_id),
-            auth=None,
-            headers=None,
-            in_json=False
-                    )
+            in_json= False
+        )
+        print(response)
         LOGGER.info('POST Req Done')
         LOGGER.info('Now Verify')
         verify_http_status_code(response_data=response, expected_data=201)
